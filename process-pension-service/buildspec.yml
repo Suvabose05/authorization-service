@@ -23,7 +23,7 @@ phases:
       - echo Build completed on `date`
       - docker push 860061945305.dkr.ecr.ap-south-1.amazonaws.com/suvabose-pension-management-system-registry:process-pension-service
       - echo Writing definition files
-      - printf '[{"name":"ij028-pod4-process-pension-service-container","imageUri":"%s"}]'  860061945305.dkr.ecr.ap-south-1.amazonaws.com/suvabose-pension-management-system-registry:process-pension-service > taskdefinition.json
+      - printf '[{"name":"process-pension-service","imageUri":"%s"}]' 860061945305.dkr.ecr.ap-south-1.amazonaws.com/suvabose-pension-management-system-registry:process-pension-service > taskdefinition.json
 
 artifacts:
   files: process-pension-service/taskdefinition.json
