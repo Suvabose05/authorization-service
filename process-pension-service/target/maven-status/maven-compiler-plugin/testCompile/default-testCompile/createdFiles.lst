@@ -1,0 +1,4 @@
+com\cts\processPension\repository\PensionDetailsRepositoryTests.class
+com\cts\processPension\controller\ProcessPensionControllerTest.class
+com\cts\processPension\ProcessPensionApplicationTests.class
+com\cts\processPension\service\ProcessPensionServiceImplTest.class
