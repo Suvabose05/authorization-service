@@ -15,7 +15,7 @@ phases:
       - echo Building java
       - mvn clean package
       - echo Building the docker image
-      - docker build -t pensioner-detail-service .
+      - docker build -t suvabose-pension-management-system-registry::latest .
       - docker tag pensioner-detail-service 860061945305.dkr.ecr.ap-south-1.amazonaws.com/suvabose-pension-management-system-registry:latest
   post_build:
     commands:
