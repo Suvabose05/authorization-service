@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:156962844638:task-definition/suvabose-eureka-server:4"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/pension-detail:3"
         LoadBalancerInfo:
-          ContainerName: "eureka-server"
-          ContainerPort: "80"
+          ContainerName: "suvabose-pension-management-system-registry"
+          ContainerPort: "8083"
         PlatformVersion: "LATEST"
