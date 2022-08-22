@@ -4,7 +4,7 @@ Resources:
       Type: AWS::ECS::Service
       Properties:
         TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/pension-detail:3"
-        LoadBalancerInfo:
+        LoadBalancerInfo: "pension-details-suva"
           ContainerName: "suvabose-pension-management-system-registry"
           ContainerPort: "8083"
         PlatformVersion: "LATEST"
